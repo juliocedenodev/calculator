@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display: grid;
+    width: 40%;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 15px;
+    grid-template-rows: 140px;
+    grid-template-areas: 
+    "display display display"
+    "buttons buttons operators"
+    "buttons buttons operators";
+    background: rgb(209, 208, 208);
+}
+#display{
+    grid-area: display;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 2rem;
+    box-shadow: 0 5px 5px -5px black;
+}
+#display #display-previous{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-style: oblique;
+    color: rgba(0, 0, 0, 0.6);
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+#display #display-current{
+    margin: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    word-break: break-all;
+}       
+
+#buttons{
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 5px 0px 5px -7px black; 
+}
+.button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    box-shadow: inset 4px 4px 3px -5px black;
+}
+#operators
+{
+    grid-area: operators;
+    display: grid;
+}
